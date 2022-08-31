@@ -1,3 +1,6 @@
+import './style.css';
+import CartWidget from '../CartWidget/CartWidget';
+
 const NavBar = () => {
     return (
         <div className="header-style">
@@ -8,6 +11,8 @@ const NavBar = () => {
                 <a href="" target="_blank" className="nav-item">Productos</a>
                 <a href="" target="_blank" className="nav-item">Contacto</a>
             </ul>
+
+            <CartWidget/>
         </div>
     )
 }

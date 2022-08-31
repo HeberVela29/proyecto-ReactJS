@@ -1,5 +1,6 @@
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
       </header>
 
       <main>
-        
+        <ItemListContainer greeting={"Hola soy un saludo!"}/>
       </main>
     </div>
   );
