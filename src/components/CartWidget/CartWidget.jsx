@@ -4,7 +4,6 @@ import cart from "../../img/cart.png"
 const CartWidget = () => {
   return (
     <img className="cart" src= {cart} alt="cart"/>
-    
   )
 }
 

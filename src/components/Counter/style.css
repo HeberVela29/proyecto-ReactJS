@@ -1,0 +1,14 @@
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.boton {
+    height: 2em;
+}
+
+h1 {
+    text-align: center;
+}
