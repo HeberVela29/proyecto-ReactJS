@@ -2,15 +2,15 @@ import { useState } from 'react';
 import './style.css';
 
 const Counter = (props) => {
-    const [stock, setStock] = useState(0)  
+    const [stock, setStock] = useState(0);
     const sumar = () => {
         if (stock < props.stockMax) {
-            setStock(stock + 1)
+            setStock(stock + 1);
         }
     }
     const restar = () => {
         if (stock > 0) {
-            setStock(stock - 1)
+            setStock(stock - 1);
         }
     }
   return (
@@ -25,4 +25,4 @@ const Counter = (props) => {
   )
 }
 
-export default Counter
+export default Counter;

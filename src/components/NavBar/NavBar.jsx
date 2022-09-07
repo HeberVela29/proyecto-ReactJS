@@ -4,7 +4,7 @@ import CartWidget from '../CartWidget/CartWidget';
 const NavBar = () => {
     return (
         <div className="header-style">
-            <h2 className="logo">VyR Tecnología</h2>
+            <h2 className="logo">VyR Celulares</h2>
             <ul className="nav-list">
                 <a href="/" target="_blank" className="nav-item">Inicio</a>
                 <a href="/" target="_blank" className="nav-item">Productos</a>
@@ -15,4 +15,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default NavBar;

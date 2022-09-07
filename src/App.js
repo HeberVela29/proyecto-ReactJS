@@ -5,16 +5,17 @@ import Counter from './components/Counter/Counter';
 
 
 function App() {
+  
   return (
-    <div >
+    <>
       <header>
         <NavBar/>
       </header>
       <main>
-        <ItemListContainer greeting={"Hola soy un saludo!"}/>
+        <ItemListContainer/> 
         <Counter stockMax='15'/>
       </main>
-    </div>
+    </>
   );
 }
 
