@@ -1,7 +1,7 @@
 
 const mockdata = [
     { 
-        id: 1,
+        id: "1",
         nombre: 'motoedge20',
         marca: 'motorola',
         category: 'motorola',
@@ -12,7 +12,7 @@ const mockdata = [
     },
 
     { 
-        id: 2,
+        id: "2",
         nombre: 'motog60s',
         marca: 'motorola',
         category: 'motorola',
@@ -23,7 +23,7 @@ const mockdata = [
     },
 
     { 
-        id: 3,
+        id: "3",
         nombre: 'motog71',
         marca: 'motorola',
         category: 'motorola',
@@ -34,7 +34,7 @@ const mockdata = [
     },
 
     { 
-        id: 4,
+        id: "4",
         nombre: 'samsunga53',
         marca: 'samsung',
         category: 'samsung',
@@ -45,7 +45,7 @@ const mockdata = [
     },
 
     { 
-        id: 5,
+        id: "5", 
         nombre: 'samsungs22',
         marca: 'samsung',
         category: 'samsung',
@@ -56,7 +56,7 @@ const mockdata = [
     },
 
     { 
-        id: 6,
+        id: "6",
         nombre: 'samsungzflip',
         marca: 'samsung',
         category: 'samsung',
@@ -67,7 +67,7 @@ const mockdata = [
     },
 
     { 
-        id: 7,
+        id: "7",
         nombre: 'tcl20',
         marca: 'tcl',
         category: 'otras',
@@ -78,7 +78,7 @@ const mockdata = [
     },
 
     { 
-        id: 8,
+        id: "8",
         nombre: 'tcl30',
         marca: 'tcl',
         category: 'otras',
@@ -89,7 +89,7 @@ const mockdata = [
     },
 
     { 
-        id: 9,
+        id: "9",
         nombre: 'zteblade',
         marca: 'zte',
         category: 'otras',

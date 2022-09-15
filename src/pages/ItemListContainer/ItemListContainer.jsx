@@ -1,8 +1,8 @@
 import './style.css';
-import mockdata from '../../../Data/Data';
+import mockdata from '../../Data/Data';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ItemList from '../../ItemList/ItemList';
+import ItemList from '../../components/ItemList/ItemList';
 
 
 const ItemListContainer = () => {
@@ -18,6 +18,7 @@ const ItemListContainer = () => {
       getFetch.then((resp) => setData(resp))
         .catch((err) => console.log(err))
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categoryName]);
 
   const getFetch = new Promise((resolve, reject) => {
@@ -28,7 +29,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <ItemList products={data}/>
+      <ItemList products={data} />
     </>
   )
 }
