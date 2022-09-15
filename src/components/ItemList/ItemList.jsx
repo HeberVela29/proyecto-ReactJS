@@ -1,11 +1,17 @@
 import './style.css';
 import Item from '../Item/Item';
+import { Link } from 'react-router-dom';
 
 
-const ItemList = ({products}) => {
+const ItemList = ({ products }) => {
   return (
     <>
-        {products.map(cel => <Item key={cel.id} data={cel}></Item>)}
+      {products.map((data) => (
+        <Link className='detail-link' key={data.id} to={'/detalle/' + data.id}>
+          <Item data={data}></Item>
+        </Link>
+      ))
+      }
     </>
   )
 }

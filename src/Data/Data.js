@@ -1,9 +1,10 @@
 
-const data = [
+const mockdata = [
     { 
         id: 1,
         nombre: 'motoedge20',
         marca: 'motorola',
+        category: 'motorola',
         precio: 75000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 3,
@@ -14,6 +15,7 @@ const data = [
         id: 2,
         nombre: 'motog60s',
         marca: 'motorola',
+        category: 'motorola',
         precio: 60000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 5,
@@ -24,6 +26,7 @@ const data = [
         id: 3,
         nombre: 'motog71',
         marca: 'motorola',
+        category: 'motorola',
         precio: 65000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 4,
@@ -34,6 +37,7 @@ const data = [
         id: 4,
         nombre: 'samsunga53',
         marca: 'samsung',
+        category: 'samsung',
         precio: 70000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 6,
@@ -44,6 +48,7 @@ const data = [
         id: 5,
         nombre: 'samsungs22',
         marca: 'samsung',
+        category: 'samsung',
         precio: 65000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 5,
@@ -54,6 +59,7 @@ const data = [
         id: 6,
         nombre: 'samsungzflip',
         marca: 'samsung',
+        category: 'samsung',
         precio: 85000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 2,
@@ -64,6 +70,7 @@ const data = [
         id: 7,
         nombre: 'tcl20',
         marca: 'tcl',
+        category: 'otras',
         precio: 25000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 8,
@@ -74,6 +81,7 @@ const data = [
         id: 8,
         nombre: 'tcl30',
         marca: 'tcl',
+        category: 'otras',
         precio: 30000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 7,
@@ -84,6 +92,7 @@ const data = [
         id: 9,
         nombre: 'zteblade',
         marca: 'zte',
+        category: 'otras',
         precio: 35000,
         descripcion: '4 ram cámara: 64px pantalla: 6.4',
         stock: 5,
@@ -91,16 +100,6 @@ const data = [
     }
 ]
 
-const getFetch = new Promise((resolve, reject) => {
-    let condition = true;
-    if(condition){
-        setTimeout(() => {
-            resolve(data);
-        }, 2000);
-    }
-    else{
-        reject(console.log('No data'));
-    }
-})
 
-export default getFetch;
+
+export default mockdata;
