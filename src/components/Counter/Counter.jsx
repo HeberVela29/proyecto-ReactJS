@@ -1,10 +1,9 @@
-import { useState } from 'react';
 import './style.css';
 
-const Counter = (props) => {
-    const [stock, setStock] = useState(0);
+const Counter = ({stock, setStock, stockMax}) => {
+    
     const sumar = () => {
-        if (stock < props.stockMax) {
+        if (stock < stockMax) {
             setStock(stock + 1);
         }
     }
@@ -15,12 +14,12 @@ const Counter = (props) => {
     }
   return (
     <>
+    <h3>Stock máximo: {stockMax}</h3>
     <div className='counter'>
         <button className='boton' onClick={restar}>-</button>
         <h1>{stock}</h1>
         <button className='boton' onClick={sumar}>+</button>
     </div> 
-    <h1>Stock máximo: {props.stockMax}</h1>
     </>
   )
 }
