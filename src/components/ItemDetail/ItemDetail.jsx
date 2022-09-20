@@ -1,13 +1,16 @@
 import './style.css';
 import Counter from '../Counter/Counter';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
 
 
-const ItemDetail = ({ data }) => {
+const ItemDetail = ({ data }) => { 
+  const {addToCart} = useContext(CartContext)
   const [stock, setStock] = useState(0);
-  const clicked = () => {
-    console.log(stock);
+
+  function onAdd(data) {
+    addToCart(data, stock)
   }
   return (
     <>
@@ -21,7 +24,7 @@ const ItemDetail = ({ data }) => {
         <Counter stock={stock} setStock={setStock} stockMax={data.stock} />
       </div>
       <div className='link'>
-      <Link to={"/cart"}><button className="boton" onClick={clicked}>Agregar al carrito</button></Link>
+      <Link to={"/cart"}><button className="boton" onClick={() => onAdd(data)}>Agregar al carrito</button></Link>
       </div>
     </>
   )
