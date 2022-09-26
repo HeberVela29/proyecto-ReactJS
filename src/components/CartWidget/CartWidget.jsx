@@ -1,9 +1,10 @@
 import './style.css';
 import cart from "../../cart.png"
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
   return (
-    <img className="cart" src= {cart} alt="cart"/>
+    <Link to={'/cart'}><img className="cart" src= {cart} alt="cart"/></Link>
   )
 }
 

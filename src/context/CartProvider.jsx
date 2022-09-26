@@ -10,17 +10,23 @@ export const CartProvider = ({ children }) => {
         } else {
             setCart([...cart, { ...item, cantidad }])
         }
-        console.log('cart', [...cart, { ...item, cantidad }] )
+        console.log('cart', [...cart, { ...item, cantidad }])
     };
     const isInCart = (id) => {
         return cart.some((item) => item.id === id);
     };
     // const clear = () => {
     //     setCart([]);
-    // }
-    // const removeItem = () => {
-
-    // }
+    // };
+    // const removeItem = (productId) => {
+    //     let nuevoArray = [];
+    //     cart.forEach(product => {
+    //         if (product.id !== productId) {
+    //             nuevoArray.push(product)
+    //         }
+    //     })
+    //     setCart(nuevoArray);
+    // };
 
     return (
         <CartContext.Provider value={{ cart, addToCart }}>

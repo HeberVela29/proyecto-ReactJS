@@ -1,27 +1,36 @@
 import './style.css';
 
-const Counter = ({stock, setStock, stockMax}) => {
+const Counter = ({ count, setCount, stockMax, onAdd, data}) => {
     
     const sumar = () => {
-        if (stock < stockMax) {
-            setStock(stock + 1);
+        if (count < stockMax) {
+            setCount(count + 1);
         }
     }
     const restar = () => {
-        if (stock > 0) {
-            setStock(stock - 1);
+        if (count > 0) {
+            setCount(count - 1);
         }
     }
-  return (
-    <>
-    <h3>Stock máximo: {stockMax}</h3>
-    <div className='counter'>
-        <button className='boton' onClick={restar}>-</button>
-        <h1>{stock}</h1>
-        <button className='boton' onClick={sumar}>+</button>
-    </div> 
-    </>
-  )
+
+    const onAddCart = () => {
+        if (count <= stockMax) {
+          onAdd(data, count)
+        }
+      }
+  
+
+    return (
+        <>
+            <h3>Stock máximo: {stockMax}</h3>
+            <div className='counter'>
+                <button className='boton' onClick={restar}>-</button>
+                <h1>{count}</h1>
+                <button className='boton' onClick={sumar}>+</button>
+                <button onClick={onAddCart}>Agregar al carrito</button>
+            </div>
+        </>
+    )
 }
 
 export default Counter;
