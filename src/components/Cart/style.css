@@ -7,3 +7,8 @@
 .img {
     height: 80px;
 }
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}

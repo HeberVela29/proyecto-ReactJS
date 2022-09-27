@@ -23,8 +23,9 @@ const ItemDetail = ({ data }) => {
         <h2>Descripción: {data.descripcion}</h2>
         <h2>Precio: ${data.precio}</h2>
         <img className='img' src={data.img} alt={data.nombre} />
-        {disableCount ? (<div className='link'><Link to={"/cart"}><button className="boton">Ir al carrito</button></Link></div>)
-          : (<Counter count={count} setCount={setCount} stockMax={data.stock} onAdd={onAdd} data={data}/>)}
+        {disableCount ? (<div className='link'><Link to={"/cart"}><button className="boton">Ir al carrito</button></Link></div>
+        ) : (
+        <Counter count={count} setCount={setCount} stockMax={data.stock} onAdd={onAdd} data={data}/>)}
       </div>
 
     </>

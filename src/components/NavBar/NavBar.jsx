@@ -1,11 +1,15 @@
 import './style.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink } from 'react-router-dom';
+import { useContext } from "react"
+import { CartContext } from '../../context/CartContext';
 
 const NavBar = () => {
+    const { cart } = useContext(CartContext);
+
     return (
         <div className="header-style">
-            <h2  className="logo">
+            <h2 className="logo">
                 <Link className="nav-link" to={'/'}>VyR Celulares</Link>
             </h2>
             <ul className="nav-list">
@@ -22,7 +26,8 @@ const NavBar = () => {
                     <NavLink className="nav-link" to={'/category/otras'}>Otras marcas</NavLink>
                 </li>
             </ul>
-            <CartWidget/>
+            {cart.length > 0 ? <CartWidget /> : <div></div>}
+
         </div>
     )
 }
