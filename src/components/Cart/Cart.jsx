@@ -24,7 +24,7 @@ const Cart = () => {
     const query = collection(db, 'Orders');
     addDoc(query, order)
       .then(({id}) => {
-        alert(`Gracias por tu compra. Tu número de orden es: ${id}`)
+        alert(`Gracias por tu compra. El id de tu orden es:  ${id}`)
       })
       .catch(() => {
         alert('Ocurrió un error al generar la orden')
@@ -66,13 +66,13 @@ const Cart = () => {
 
             {cart.length > 0 ?
               <>
-                <div className="fleInputs">
+                <div>
                   <input className="input" name="name" type="text" placeholder="Nombre" value={order.buyer.name} onChange={handleInputChange} />
                 </div>
-                <div className="fleInputs">
+                <div>
                   <input className="input" name="phone" type="phone" placeholder="Phone" value={order.buyer.phone} onChange={handleInputChange} />
                 </div>
-                <div className="fleInputs">
+                <div>
                   <input className="input" name="email" type="email" placeholder="Email" value={order.buyer.email} onChange={handleInputChange} />
                 </div>
               </>
