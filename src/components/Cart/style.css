@@ -1,0 +1,14 @@
+.cart {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.img {
+    height: 80px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}

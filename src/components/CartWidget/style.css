@@ -1,0 +1,15 @@
+.cart {
+    margin: 1em;
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+.itemQuantity {
+  color: white;
+}
+
+.cartWidget {
+  display: flex;
+  align-items: center;
+}
