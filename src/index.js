@@ -15,18 +15,11 @@ const firebaseConfig = {
   projectId: "coderhouse-ecommerce-faeac",
   storageBucket: "coderhouse-ecommerce-faeac.appspot.com",
   messagingSenderId: "824854930621",
-<<<<<<< HEAD
   appId: "1:824854930621:web:7e7c9ac19fcb2d6f4643d4"
 };
 
 // Initialize Firebase
 // eslint-disable-next-line
-=======
-  appId: "1:824854930621:web:81a9e1a34aef16954643d4"
-};
-
-// Initialize Firebase
->>>>>>> ea4156e92ee2d49115f8871333053d8403c98ea0
 const app = initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
