@@ -1,0 +1,30 @@
+.footer {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+.copyrigth {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.redes{
+    display: flex;
+}
+
+.imagen-redes {
+    filter: invert(97%) sepia(52%) saturate(318%) hue-rotate(301deg) brightness(104%) contrast(101%);
+    margin: 0.5em;
+    padding-left: 0.5em;
+    width: 2.5em;
+}
+
+@media screen and (max-width: 480px){
+    .footer {
+        flex-direction: column;
+    }
+}

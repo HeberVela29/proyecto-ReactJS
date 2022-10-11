@@ -1,15 +1,18 @@
 import './style.css';
+import Card from 'react-bootstrap/Card';
 
 
 
-const Item = ({data}) => {
+const Item = ({ data }) => {
   return (
-    <div className='list'>
-      
-        <h2>{data.nombre}</h2>
-        <img className='img' src={data.img} alt={data.nombre}/>
-        <h2>${data.precio}</h2>
-      
+    <div className='m-5'>
+      <Card bg='dark' border='secondary' style={{ width: '15rem' }}>
+        <Card.Img variant="top" src={data.img} alt={data.nombre} />
+        <Card.Body>
+          <Card.Title className='text'>{data.nombre}</Card.Title>
+          <Card.Text className='text'>${data.precio}</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   )
 }

@@ -1,3 +1,11 @@
+.lista-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    text-align: center;   
+    margin-top: 20px;
+}
 .detail-link {
     text-decoration: none;
 }

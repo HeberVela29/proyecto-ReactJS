@@ -1,10 +1,12 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider} from './context/CartProvider'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path='category/:categoryName' element={<ItemListContainer />} />
           <Route path='cart' element={<Cart />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </CartProvider>
   );

@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { CartContext } from "./CartContext";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 export const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
+    const MySwal = withReactContent(Swal)
 
     const addToCart = (item, cantidad) => {
         if (isInCart(item.id)) {
-            alert('Ese producto ya está en el carrito');
+            MySwal.fire({
+                title: 'Este producto ya está en el carrito 😐',
+                confirmButtonText: 'Cerrar'
+                })
         } else {
             setCart([...cart, { ...item, cantidad }])
         }
@@ -21,15 +27,8 @@ export const CartProvider = ({ children }) => {
         console.log(cart);
     };
 
-    const removeItem = (productId) => {
-        let nuevoArray = [];
-        cart.forEach(product => {
-            if (product.id !== productId) {
-                nuevoArray.push(product)
-            }
-        })
-        setCart(nuevoArray);
-        console.log(cart);
+    const removeItem = (itemId) => {
+        setCart(cart.filter((item) => item.id !== itemId));
     };
 
     const totalItems = () => {

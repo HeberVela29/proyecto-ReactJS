@@ -11,7 +11,7 @@ const CartWidget = () => {
   return (
     <div className='cartWidget'>
     <h2 className='itemQuantity'>{totalItems()}</h2>
-    <Link to={'/cart'}><img className="cart" src= {shopcart} alt="cart"/></Link>
+    <Link className="link-cart" to={'/cart'}><img className='shopcart' src= {shopcart} alt="cart"/></Link>
     </div>
     
   )

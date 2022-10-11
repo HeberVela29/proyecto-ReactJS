@@ -23,11 +23,10 @@ const NavBar = () => {
                     <NavLink className="nav-link" to={'/category/samsung'}>Samsung</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink className="nav-link" to={'/category/otras'}>Otras marcas</NavLink>
+                    <NavLink className="nav-link" to={'/category/otras'}>Otros</NavLink>
                 </li>
             </ul>
             {cart.length > 0 ? <CartWidget /> : <div></div>}
-
         </div>
     )
 }

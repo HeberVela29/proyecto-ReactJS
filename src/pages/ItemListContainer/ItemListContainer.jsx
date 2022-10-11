@@ -24,23 +24,15 @@ const ItemListContainer = () => {
 
   const getProducts = () => {
     const db = getFirestore();
-    const querySnapshot = collection(db, 'Items');
-    if (categoryName) {
-      const queryFilter = query(querySnapshot, where("category", "==", categoryName))
-      getDocs(queryFilter).then((resp) => {
-        const data = resp.docs.map((doc) => {
-          return { id: doc.id, ...doc.data() }
-        })
-        setData(data);
+    const queryBase = collection(db, "Items");
+    const querySnapshot = categoryName ? query(queryBase, where("category", "==", categoryName)) : queryBase;
+    getDocs(querySnapshot).then((response) => {
+      console.log(response.docs);
+      const data = response.docs.map((doc) => {
+        return { id: doc.id, ...doc.data() }
       })
-    } else {
-      getDocs(querySnapshot).then((resp) => {
-        const data = resp.docs.map((doc) => {
-          return { id: doc.id, ...doc.data() }
-        })
-        setData(data);
-      })
-    }
+      setData(data);
+    })
   }
   // const getFetch = new Promise((resolve, reject) => {
   //   setTimeout(() => {

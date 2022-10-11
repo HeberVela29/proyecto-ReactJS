@@ -1,19 +1,25 @@
 .counter {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1em;
 }
 
-.boton {
+.counter-boton {
     height: 2em;
 }
 
-h1 {
+.counter-span {
+    font-size: 20px;
     text-align: center;
 }
 
 .link {
     text-align: center;
     
+}
+
+@media screen and (max-width: 480px){
+    .counter {
+        margin-bottom: 1em;
+    }
 }
