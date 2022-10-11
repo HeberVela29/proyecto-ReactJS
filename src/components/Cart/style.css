@@ -1,7 +1,7 @@
 .cart-empty {
     text-align: center;
-    margin-top: 10em;
-    margin-bottom: 10em;
+    margin-top: 12em;
+    margin-bottom: 12em;
 }
 
 
@@ -22,8 +22,8 @@
 }
 
 .form {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 4em;
     display: flex;
     justify-content: center;
     align-items: center;

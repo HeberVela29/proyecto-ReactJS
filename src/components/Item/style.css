@@ -1,8 +1,19 @@
 .card-container {
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 .text {
     color: white;
 }
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 3em;
+        padding-right: 2em;
+    }
+  }
