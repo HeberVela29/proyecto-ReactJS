@@ -7,6 +7,7 @@ Producido para el curso de ReactJs de Coderhouse.
 > Contact: vela.heber29@hotmail.com > [linkedin](https://www.linkedin.com/in/velaheber/)
 
 ### Demo
+![demo-tienda-celulares](https://user-images.githubusercontent.com/104470699/195022027-9e630e56-d832-4118-8ea1-58fb3e685863.gif)
 
 ### Main libraries used
 
@@ -19,6 +20,9 @@ Producido para el curso de ReactJs de Coderhouse.
 | Firebase          | DataBase                  |
 | React Router      | Navigation                |
 
+### Pending
+- if Stock - 0 no render ItemDetail
+- if Form labels are empty disable submit option
 
 # Getting Started with Create React App
 
