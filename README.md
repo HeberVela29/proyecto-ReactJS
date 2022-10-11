@@ -1,6 +1,6 @@
-# TIENDA DE CELULARES
+# Getting Started with Create React App
 
-Producido para el curso de ReactJs de Coderhouse.
+This project was bootstrapped with Create React App.
 
 ## Available Scripts
 
