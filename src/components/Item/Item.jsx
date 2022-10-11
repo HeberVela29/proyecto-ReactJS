@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 const Item = ({ data }) => {
   return (
-    <div className='m-5'>
+    <div className='m-5 card-container'>
       <Card bg='dark' border='secondary' style={{ width: '15rem' }}>
         <Card.Img variant="top" src={data.img} alt={data.nombre} />
         <Card.Body>
