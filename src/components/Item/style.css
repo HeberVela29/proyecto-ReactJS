@@ -9,6 +9,15 @@
     color: white;
 }
 
+@media screen and (min-width: 1440px) {
+    .card-container {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-left: 5em;
+        padding-right: 7em;
+    }
+  }
+
 @media screen and (max-width: 480px) {
     .card-container {
         margin-top: 1em;
