@@ -13,9 +13,9 @@ https://proyecto-react-1n3xiu3wt-hebervela29.vercel.app/
 ### Demo
 ![demo-tienda-celulares](https://user-images.githubusercontent.com/104470699/195022027-9e630e56-d832-4118-8ea1-58fb3e685863.gif)
 
-### Main libraries used
+### Technologies used
 
-| library           | used                      |
+| Technology        | Used for                  |
 | ----------------- | ------------------------- |
 | ReactJs           | JavaScript framework      |
 | React-Bootstrap   | Style framework           |
