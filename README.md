@@ -6,6 +6,10 @@ Producido para el curso de ReactJs de Coderhouse.
 > Heber Vela
 > Contact: vela.heber29@hotmail.com > [linkedin](https://www.linkedin.com/in/velaheber/)
 
+### Deployment
+Vercel
+https://proyecto-react-1n3xiu3wt-hebervela29.vercel.app/
+
 ### Demo
 ![demo-tienda-celulares](https://user-images.githubusercontent.com/104470699/195022027-9e630e56-d832-4118-8ea1-58fb3e685863.gif)
 
